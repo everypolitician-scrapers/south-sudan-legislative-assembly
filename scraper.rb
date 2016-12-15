@@ -37,12 +37,5 @@ def scrape_list(url)
   end
 end
 
-term = {
-  id: 1,
-  name: '1st Parliament',
-  start_date: '2011-07-09',
-}
-ScraperWiki.save_sqlite([:id], term, 'terms')
-
 scrape_list('http://www.goss.org/index.php/legislative-assembly/honourable-members')
 
